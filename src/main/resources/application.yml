@@ -1,0 +1,29 @@
+#server:
+#  port: 8080
+#    error:
+#      whitelabel:
+#        enabled: false
+
+#spring:
+#  datasource:
+##    url: jdbc:h2:mem:test
+##    url: jdbc:h2:~/bigin-api
+##    url: jdbc:h2:tcp://localhost/~/bigin-api;
+#    url: jdbc:h2:tcp://localhost/~/backpackr-api;
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+##    initialize: true
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
